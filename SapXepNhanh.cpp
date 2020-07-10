@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// Ham doi cho 2 so nguyen
 void Swap(int &a, int &b)
 {
     int temp;
@@ -8,7 +8,7 @@ void Swap(int &a, int &b)
     a=b;
     b=temp;
 }
-
+// Ham sap xep nhanh
 void QuickSort(int arr[], int left, int right)
 {
     int i,j,x;
@@ -17,7 +17,7 @@ void QuickSort(int arr[], int left, int right)
     j=right;
     while (i<=j)
     {
-        while (arr[i]<x) i++;
+        while (arr[i]<x) i++;       //Doi chieu 2 dau < va > o 2 cau lenh arr[i] va arr[j] de sap xep giam dan
         while (arr[j]>x) j--;
         if (i<=j)
         {
